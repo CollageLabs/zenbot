@@ -8,7 +8,7 @@ module.exports = function binance (conf) {
   var public_client, authed_client
 
   function publicClient () {
-    if (!public_client) public_client = new ccxt.binance({ 'apiKey': '', 'secret': '', 'options': { 'adjustForTimeDifference': true } })
+    if (!public_client) public_client = new ccxt.binance({ 'apiKey': '', 'secret': '', 'options': { 'adjustForTimeDifference': true }, 'timeout': 50000 })
     return public_client
   }
 
@@ -55,6 +55,14 @@ module.exports = function binance (conf) {
 
     getProducts: function () {
       return require('./products.json')
+    },
+    
+    getPublicClient: function () {
+      return publicClient()
+    },
+    
+    getAuthedClient: function () {
+      return authedClient()
     },
 
     getTrades: function (opts, cb) {

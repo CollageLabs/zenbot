@@ -41,3 +41,13 @@ gen.*.sh
 scripts/auto_backtester/backtesting_*.csv
 database/*
 .vscode/
+
+node_modules
+scripts/genetic_backtester/node_modules
+extensions/strategies/zp_ema_dema/strategy.js
+extensions/strategies/zp_signals/strategy.js
+lib/zp_adx.js
+lib/zp_stochastic.js
+lib/zp_dema.js
+lib/zp_trema.js
+lib/zp_stddev.js

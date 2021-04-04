@@ -46,6 +46,7 @@ node_modules
 scripts/genetic_backtester/node_modules
 extensions/strategies/zp_ema_dema/strategy.js
 extensions/strategies/zp_slow_signals/strategy.js
+extensions/strategies/zp_fast_signals/strategy.js
 lib/zp_adx.js
 lib/zp_stochastic.js
 lib/zp_dema.js
